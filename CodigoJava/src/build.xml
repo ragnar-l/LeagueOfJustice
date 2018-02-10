@@ -134,7 +134,7 @@
             <classpath refid="src.classpath"/>
         </junit>
     </target>
-    <target name="testOperacionesMatricesListas">
+    <target name="test">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
