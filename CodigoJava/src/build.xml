@@ -67,9 +67,6 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-  <target name="compile">
-    <echo message="Compiling source code"/>
-   </target>
     <target name="testRedDePetri.itWorksRepeatably">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
@@ -93,6 +90,22 @@
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="UnitTests.testCronometro" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="src.classpath"/>
+        </junit>
+    </target>
+    <target name="src">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="UnitTests.testCola" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testCronometro" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testIDVector" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testLogicaTemporal" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testMonitor" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testOperacionesMatricesListas" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testPolitica" todir="${junit.output.dir}"/>
+            <test name="UnitTests.testRedDePetri" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="src.classpath"/>
         </junit>
