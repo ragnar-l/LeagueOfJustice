@@ -67,6 +67,9 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+  <target name="compile">
+    <echo message="Compiling source code"/>
+   </target>
     <target name="testRedDePetri.itWorksRepeatably">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
