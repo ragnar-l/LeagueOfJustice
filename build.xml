@@ -22,7 +22,7 @@
         <pathelement location="../../../../../.p2/pool/plugins/org.junit.vintage.engine_4.12.0.v20170910-2246.jar"/>
         <pathelement location="../../../../../.p2/pool/plugins/org.opentest4j_1.0.0.v20170910-2246.jar"/>
         <pathelement location="../../../../../.p2/pool/plugins/org.apiguardian_1.0.0.v20170910-2246.jar"/>
-        <pathelement location="../../../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="./junit.jar"/>
         <pathelement location="../../../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
     </path>
     <path id="src.classpath">
