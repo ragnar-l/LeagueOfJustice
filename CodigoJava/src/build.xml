@@ -9,7 +9,7 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    <classpath location="/junit.jar" />
+    
     <path id="JUnit 5.libraryclasspath">
         <pathelement location="../../../../../.p2/pool/plugins/org.junit.jupiter.api_5.0.0.v20170910-2246.jar"/>
         <pathelement location="../../../../../.p2/pool/plugins/org.junit.jupiter.engine_5.0.0.v20170910-2246.jar"/>
