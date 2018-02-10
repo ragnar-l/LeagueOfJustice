@@ -6,3 +6,5 @@ jdk:
 
 before_install:
 - cd CodigoJava/src/
+
+script: testCola
