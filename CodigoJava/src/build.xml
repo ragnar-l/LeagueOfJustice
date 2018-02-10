@@ -30,7 +30,7 @@
         <path refid="JUnit 5.libraryclasspath"/>
         <pathelement location="jxl.jar"/>
     </path>
-    <target name="init">
+    <target name="test">
         <copy includeemptydirs="false" todir=".">
             <fileset dir=".">
                 <exclude name="**/*.launch"/>
